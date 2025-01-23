@@ -1,0 +1,33 @@
+counter = 0
+kilo_lb_rate = 0.4536
+while (counter < 4):
+    try:
+        given_pounds = float(input("Enter a number of pounds: "))
+        if given_pounds > 0:
+            converted_to_kilos = given_pounds * kilo_lb_rate
+            print(f"{given_pounds} pounds is about {converted_to_kilos:.2f} kilograms")
+            counter = counter + 1
+        else:
+            given_kilos = float(input("Please enter a valid number of pounds: "))
+            if given_pounds > 0:
+                converted_to_kilos = given_pounds / kilo_lb_rate
+                print(f"{given_pounds} pounds is about {converted_to_kilos:.2f} kilograms")
+                counter = counter + 1
+    except:
+        print("Please enter a valid weight")
+    try:
+        given_kilos = float(input("Enter a number of kilograms: "))
+        if given_kilos > 0:
+            converted_to_pounds = given_kilos / kilo_lb_rate
+            print(f"{given_kilos} kilograms is about {converted_to_pounds:.2f} pounds")
+            counter = counter + 1
+        else:
+            given_kilos = float(input("Please enter a valid number of kilograms: "))
+            if given_kilos > 0:
+                converted_to_pounds = given_kilos / kilo_lb_rate
+                print(f"{given_kilos} kilograms is about {converted_to_pounds:.2f} pounds")
+                counter = counter + 1
+    except:
+        print("Please enter a valid weight")
+    
+
