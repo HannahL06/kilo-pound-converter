@@ -1,2 +1,2 @@
 # kilo-pound-converter
-Converts between Kilos and pounds.
+This program converts amounts from pounds to kilograms and from kilograms to pounds.
